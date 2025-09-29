@@ -1,0 +1,370 @@
+body {
+  font-family: "Aeonik", sans-serif;
+  text-align: left;
+  color: #fff;
+  line-height: 20px;
+  background-color: rgb(29, 32, 36);
+  font-size: 1vw;
+  padding-left: 200px;
+  padding-right: 200px;
+  cursor: none;
+  transition: background 0.1s linear;
+}
+html {
+  scroll-behavior: smooth;
+}
+.intro {
+  height: 900px;
+  text-align: center;
+}
+.intro_text{
+  font-size: 100px;
+  display: inline-block;
+}
+
+
+
+
+header {
+  height: 900px;
+}
+
+a {
+  cursor: none;
+}
+
+/*  */
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.15s ease, width 0.2s ease, height 0.2s ease;
+}
+
+.cursor.click {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(46,208,110, 0.8);
+}
+
+/*  */
+
+.top_introduce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 44rem;
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-shadow: 1px 1px 0 #000;
+}
+
+.top_introduce_text_title {
+  font-size: 3.5em;
+  font-weight: 400;
+  line-height: 1;
+  padding-top: 30px;
+}
+
+.top_introduce_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-bottom: 6em;
+}
+
+.top_introduce h2 {
+  font-size: 50px;
+}
+
+.top_introduce_text p:first-child {
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 1;
+}
+
+
+.gnb {
+  position: fixed;
+  bottom: 1.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  box-align: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.gnb ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.25em;
+  box-pack: center;
+  justify-content: center;
+  box-align: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  background-color: rgba(16, 18, 20, 0.35);
+  border-radius: 1em;
+  padding: 0.5em;
+}
+
+.gnb ul li {
+  letter-spacing: 0.02em;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.gnb ul li a {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5em;
+  padding: 0.5em 2em 0.6em;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+
+.gnb ul li:last-child a {
+  border-color: #2ed06e;
+}
+
+.gnb ul li:hover a {
+  background-color: #fff;
+  color: #101214;
+}
+
+.gnb ul li:hover:last-child a {
+  background-color: #2ed06e;
+  border-color: #1c8946;
+  color: #ffffff;
+}
+
+.main_section_title {
+  font-size: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-35px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.Personal_Project article,
+.Team_Project article img {
+  display: inline-block;
+  animation: bounce 3.5s ease-in-out infinite;
+}
+
+.Personal_Project {
+  height: 1000px;
+}
+
+.Personal_Project article {
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.Personal_Project img {
+  width: 70%;
+}
+
+.project_img {
+  margin-top: 200px;
+  animation: bounce 4s ease-in-out infinite;
+}
+
+.Team_Project {
+  height: 1000px;
+}
+
+.Team_Project article {
+  display: flex;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.Team_Project article img {
+  width: 70%;
+}
+
+.work {
+  height: 900px;
+}
+
+.work article {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.work article p{
+  margin-left: 300px;
+}
+.work_illustrator{
+  margin-right: 200px;
+}
+.work_photoshop{
+  margin-right: 290px;
+}
+.work_photoshop p:last-child{
+  margin-right: 50px;
+}
+.work_figma{
+  margin-right: 200px;
+}
+.hover-target {
+      display: inline-block;
+      margin: 50px 0;
+      cursor: pointer;
+      position: relative;
+    }
+
+    #hover-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 30%;
+      background-size: cover;
+      background-position: center;
+      pointer-events: none;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.9);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 9999;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+.skills_wrap {
+  width: 60%;
+  padding: 30px;
+  margin: 0 auto;
+  border: 1px solid #333;
+  border-radius: 50px;
+  background-color: #fff;
+
+  & h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  & .skill_bg {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+
+    & .skill_bar {
+      color: #fff;
+      padding: 20px 0;
+      width: 0;
+      text-align: center;
+    }
+
+    & .html {
+      background-color: antiquewhite;
+    }
+
+    & .css {
+      background-color: #f44336;
+    }
+
+    & .js {
+      background-color: rgb(219, 219, 51);
+    }
+
+    & .jq {
+      background-color: aquamarine;
+    }
+
+    & .figma {
+      background-color: thistle;
+    }
+
+    & .illustrator {
+      background-color: chartreuse;
+    }
+
+    & .photoshop {
+      background-color: burlywood;
+    }
+
+    & .github {
+      background-color: deepskyblue;
+    }
+  }
+}
+
+.skill_mom {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.skill_bg img {
+  width: 60px;
+  height: 60px;
+  transform: scale(0.9);
+}
+
+footer {
+  height: 600px;
+}
+
+footer img {
+  width: 70px;
+}
+
+.instagram {
+  margin: 0 10px;
+}
+
+footer h3 {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: right;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.4);
+}
